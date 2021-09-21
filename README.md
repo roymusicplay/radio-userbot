@@ -9,8 +9,7 @@ The easiest way to deploy this Bot
 - [🛠Support Group🛡](http://t.me/AwesomeSupport)
 
 
-```
-Please Fork the Repositry And Do not forgot To Star the repositry 🤞🤞
+## Please Fork the Repositry And Do not forgot To Star the repositry 🤞🤞
 
 
 
