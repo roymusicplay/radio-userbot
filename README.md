@@ -28,7 +28,7 @@ The easiest way to deploy this Bot
 ## 👻 Commands 👻 [ADMINS ONLY]
  AFTER ADDING USERBOT TO YOUR GROUP. PROMOTE THE USERBOT ( RADIO PLAYER )
  
- TO START RADIO NOW COMMAND /hero 
+ TO START RADIO NOW COMMAND /radio
  Then After You will get an Text msg from userbot Then reply these msg with /radio <station id>
 
 ## NOTE 📖
