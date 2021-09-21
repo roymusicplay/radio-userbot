@@ -18,7 +18,7 @@ app = Client(SESSION_NAME, API_ID, API_HASH)
 
 
 
-HELP =""" Lovely Radio stations:
+PLAY =""" Lovely Radio stations:
 
 1. https://radioindia.net/radio/hungamanow/icecast.audio
 
@@ -34,23 +34,23 @@ HELP =""" Lovely Radio stations:
 
 7.
 
-ᴛᴏ ꜱᴛᴀʀᴛ ʀᴇᴘʟᴀʏ ᴛᴏ ᴛʜɪꜱ ᴍᴇꜱꜱᴀɢᴇ ᴡɪᴛʜ ᴄᴏᴍᴍᴀɴᴅ /lovely <Station Number> ʟɪᴋᴇ /lovely 1
-ᴛᴏ ᴇɴᴅ and ꜱᴛᴏᴘ ꜱᴛʀᴇᴀᴍ by /stop ᴄᴏᴍᴍᴀɴᴅ  for any help join @LOVELY_5UPPORT """
+ᴛᴏ ꜱᴛᴀʀᴛ ʀᴇᴘʟᴀʏ ᴛᴏ ᴛʜɪꜱ ᴍᴇꜱꜱᴀɢᴇ ᴡɪᴛʜ ᴄᴏᴍᴍᴀɴᴅ /station <Station Number> ʟɪᴋᴇ /station 1
+ᴛᴏ ᴇɴᴅ and ꜱᴛᴏᴘ ꜱᴛʀᴇᴀᴍ by /stop ᴄᴏᴍᴍᴀɴᴅ  for any help join  @AwesomeSupport"""
 
 
 GROUP_CALLS = {}
 FFMPEG_PROCESSES = {}
 
-@app.on_message(filters.command('help',prefixes='/'))
+@app.on_message(filters.command('play',prefixes='/'))
 async def help(client,message):
 	get =await client.get_chat_member(message.chat.id,message.from_user.id)
 	status = get. status
 	cmd_user = ["administrator","creator"]
 	if status in cmd_user:
-		await message.reply_text(HELP)
+		await message.reply_text(PLAY)
 
 
-@app.on_message(filters.command('lovely', prefixes='/'))
+@app.on_message(filters.command('station', prefixes='/'))
 async def start(client,message):
 	get =await client.get_chat_member(message.chat.id,message.from_user.id)
 	status = get. status
@@ -81,10 +81,10 @@ async def start(client,message):
 	await group_call.start(message.chat.id)
 	process = ffmpeg.input(station_stream_url).output(        input_filename, format='s16le',       acodec='pcm_s16le', ac=2, ar='48k'  ).overwrite_output().run_async()
 	FFMPEG_PROCESSES[message.chat.id] = process
-	await message.reply_text(f'RADIO #{station_id} ꜱᴛᴀʀᴛᴇᴅ ᴘʟᴀʏɪɴɢ ᴜʀ ᴄʜᴏᴏꜱᴇɴ ꜱᴛᴀᴛɪᴏɴ JOIN @LOVELY_NETWORK.')
+	await message.reply_text(f'RADIO #{station_id} ꜱᴛᴀʀᴛᴇᴅ ᴘʟᴀʏɪɴɢ ᴜʀ ᴄʜᴏᴏꜱᴇɴ ꜱᴛᴀᴛɪᴏɴ JOIN @AwesomeSupport.')
 
 
-@app.on_message( filters.command('stop', prefixes='/'))
+@app.on_message( filters.command('end', prefixes='/'))
 async def stop(client,message):
 	get =await client.get_chat_member(message.chat.id,message.from_user.id)
 	status = get. status
