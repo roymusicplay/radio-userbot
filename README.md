@@ -14,7 +14,7 @@ Please Fork the Repositry And Do not forgot To Star the repositry 🤞🤞
 
 
 
-### Mandatory Vars.
+## Mandatory Vars.
 
 - Some Of The Mandatory Vars Are :-
    - `API_ID` :  Give API_ID of your Alternate Telegram Account. also get from here [@APIInfoBot](https://t.me/APIinfoBot)
@@ -22,10 +22,10 @@ Please Fork the Repositry And Do not forgot To Star the repositry 🤞🤞
    - `SESSION_NAME` :  Make a string session from [here](https://replit.com/@QueenArzoo/VCPlayBot)
 
 
-#### CONTRIBUTE 🏷
+## CONTRIBUTE 🏷
     IF YOU KNOW ANY RADIO STATION LINK THEN YOU CAN SEND A PULL REQUEST 😊😊
 
-### 🎛 Commands 🎛 [ ADMINS ONLY ]
+## 🎛 Commands 🎛 [ ADMINS ONLY ]
  AFTER ADDING USERBOT TO YOUR GROUP. PROMOTE THE USERBOT ( RADIO PLAYER )
  
  TO START RADIO NOW COMMAND /hero 
