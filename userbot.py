@@ -18,7 +18,7 @@ app = Client(SESSION_NAME, API_ID, API_HASH)
 
 
 
-PLAY =""" Lovely Radio stations:
+RADIO ="""INDIAN  Radio stations:
 
 1. https://radioindia.net/radio/hungamanow/icecast.audio
 
@@ -32,22 +32,22 @@ PLAY =""" Lovely Radio stations:
 
 6. https://node-31.zeno.fm/9msu0vbxezzuv
 
-7.
+If you more radio Station Link Please Contact to   @AwesomeSupport we will add them 
 
-ᴛᴏ ꜱᴛᴀʀᴛ ʀᴇᴘʟᴀʏ ᴛᴏ ᴛʜɪꜱ ᴍᴇꜱꜱᴀɢᴇ ᴡɪᴛʜ ᴄᴏᴍᴍᴀɴᴅ /station <Station Number> ʟɪᴋᴇ /station 1
-ᴛᴏ ᴇɴᴅ and ꜱᴛᴏᴘ ꜱᴛʀᴇᴀᴍ by /stop ᴄᴏᴍᴍᴀɴᴅ  for any help join  @AwesomeSupport"""
+ᴛᴏ ꜱᴛᴀʀᴛ ʀᴇᴘʟᴀʏ ᴛᴏ ᴛʜɪꜱ ᴍᴇꜱꜱᴀɢᴇ ᴡɪᴛʜ ᴄᴏᴍᴍᴀɴᴅ /radio <Station Number> ʟɪᴋᴇ /radio 1
+ᴛᴏ ᴇɴᴅ and ꜱᴛᴏᴘ ꜱᴛʀᴇᴀᴍ by /end ᴄᴏᴍᴍᴀɴᴅ  for any help join  @AwesomeSupport"""
 
 
 GROUP_CALLS = {}
 FFMPEG_PROCESSES = {}
 
-@app.on_message(filters.command('play',prefixes='/'))
+@app.on_message(filters.command('radio',prefixes='/'))
 async def help(client,message):
 	get =await client.get_chat_member(message.chat.id,message.from_user.id)
 	status = get. status
 	cmd_user = ["administrator","creator"]
 	if status in cmd_user:
-		await message.reply_text(PLAY)
+		await message.reply_text(RADIO)
 
 
 @app.on_message(filters.command('station', prefixes='/'))
