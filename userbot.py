@@ -28,6 +28,12 @@ HELP =""" Lovely Radio stations:
 
 4. https://radioindia.net/radio/hungamanow/icecast.audio
 
+5. http://node-09.zeno.fm/3u5yu2u8grquv
+
+6. https://node-31.zeno.fm/9msu0vbxezzuv
+
+7.
+
 ᴛᴏ ꜱᴛᴀʀᴛ ʀᴇᴘʟᴀʏ ᴛᴏ ᴛʜɪꜱ ᴍᴇꜱꜱᴀɢᴇ ᴡɪᴛʜ ᴄᴏᴍᴍᴀɴᴅ /lovely <Station Number> ʟɪᴋᴇ /lovely 1
 ᴛᴏ ᴇɴᴅ and ꜱᴛᴏᴘ ꜱᴛʀᴇᴀᴍ by /stop ᴄᴏᴍᴍᴀɴᴅ  for any help join @LOVELY_5UPPORT """
 
