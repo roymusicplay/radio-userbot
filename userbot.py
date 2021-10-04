@@ -34,10 +34,10 @@ RADIO ="""INDIAN  Radio stations:
 
 7. https://prclive1.listenon.in/Hindi
 
-If you Know any radio Station  Please Contact to   @AwesomeSupport we will add it.
+If you Know any radio Station  Please Contact to   @ABOUT_ABHINAS we will add it.
 
 ᴛᴏ ꜱᴛᴀʀᴛ ʀᴇᴘʟᴀʏ ᴛᴏ ᴛʜɪꜱ ᴍᴇꜱꜱᴀɢᴇ ᴡɪᴛʜ ᴄᴏᴍᴍᴀɴᴅ /radio <Station Number> ʟɪᴋᴇ /radio 1
-ᴛᴏ ᴇɴᴅ and ꜱᴛᴏᴘ ꜱᴛʀᴇᴀᴍ by /end ᴄᴏᴍᴍᴀɴᴅ  for any help join  @AwesomeSupport"""
+ᴛᴏ ᴇɴᴅ and ꜱᴛᴏᴘ ꜱᴛʀᴇᴀᴍ by /end ᴄᴏᴍᴍᴀɴᴅ  for any help join  @ABOUT_ABHINAS"""
 
 
 GROUP_CALLS = {}
